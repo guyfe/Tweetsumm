@@ -10,3 +10,7 @@ If you use this dataset in your work, please cite our paper:
     title = "....",
     
 }
+
+
+# License
+Dataset released under the CDLA-Sharing license https://cdla.io/sharing-1-0/
