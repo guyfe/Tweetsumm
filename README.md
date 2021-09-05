@@ -14,3 +14,6 @@ If you use this dataset in your work, please cite our paper:
 
 # License
 Dataset released under the CDLA-Sharing license https://cdla.io/sharing-1-0/
+
+# Disclaimer
+IBM is not responsible for the content of the data, nor for any claim related to the data (including claims related to alleged intellectual property or privacy breach).
