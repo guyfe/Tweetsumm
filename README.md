@@ -40,7 +40,9 @@ The `TweetSumProcessor` has one method : `get_dialog_with_summaries` which gets 
     with open(TWEET_SUMM_FILE_PATH) as f:
         dialog_with_summaries = processor.get_dialog_with_summaries(f.readlines())
         for dialog_with_summary in dialog_with_summaries:
-            ....
+            json_format = dialog_with_summary.get_json()
+            string_format = str(dialog_with_summary)
+            ...
 ```   
 
 ## TweetSumm entry sample
