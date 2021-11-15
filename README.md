@@ -7,7 +7,24 @@ Tweetsumm comprises of 1,100 dialogs reconstructed from Tweets that appear in th
 
 
 If you use this dataset in your work, please cite our paper
-
+```
+@inproceedings{feigenblat-etal-2021-tweetsumm-dialog,
+    title = "{TWEETSUMM} - A Dialog Summarization Dataset for Customer Service",
+    author = "Feigenblat, Guy  and
+      Gunasekara, Chulaka  and
+      Sznajder, Benjamin  and
+      Joshi, Sachindra  and
+      Konopnicki, David  and
+      Aharonov, Ranit",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.24",
+    pages = "245--260",
+}
+```
 
 ## TweetSumm format
 
