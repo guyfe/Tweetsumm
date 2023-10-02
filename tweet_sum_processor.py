@@ -77,8 +77,9 @@ class DialogWithSummaries():
             extractive_summaries_to_json.append(summ_json)
         abstractive_summaries_to_json = list()
         for summ in self.abstractive_summaries:
-            abst_json = [txt for txt in summ ]
-            abstractive_summaries_to_json.append(abst_json)
+            if summ is not None:
+               abst_json = [txt for txt in summ ]
+               abstractive_summaries_to_json.append(abst_json)
 
         result = {
             'dialog' : dialog,
@@ -107,9 +108,12 @@ class DialogWithSummaries():
         result += 'Abstractive summaries:\n'
         result += '=-=-=-=-=-=-=-=-=-=-=\n'
         for cnt,abstractive_summary in enumerate(self.abstractive_summaries):
-            result += ('{0}:\n'.format(cnt))
-            result += '\t' + ' '.join(abstractive_summary) +'\n'
-            result += '\n'
+            try:
+                result += ('{0}:\n'.format(cnt))
+                result += '\t' + ' '.join(abstractive_summary) +'\n'
+                result += '\n'
+            except TypeError:
+                    continue
         return result
 
 
